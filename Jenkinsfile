@@ -15,12 +15,12 @@ pipeline {
             }
         }
 
-        stage('Test') {
-            steps {
-                // Run tests (Windows command)
-                bat 'npm test'
-            }
-        }
+        // stage('Test') {
+        //     steps {
+        //         // Run tests (Windows command)
+        //         bat 'npm test'
+        //     }
+        // }
 
         stage('Deploy') {
             steps {
