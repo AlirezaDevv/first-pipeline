@@ -10,21 +10,20 @@ pipeline {
 
         stage('Build') {
             steps {
-                // Install dependencies
-                sh 'npm install'
+                // Install dependencies (Windows command)
+                bat 'npm install'
             }
         }
 
         stage('Test') {
             steps {
-                // Run tests
-                sh 'npm test'
+                // Run tests (Windows command)
+                bat 'npm test'
             }
         }
 
         stage('Deploy') {
             steps {
-                // Deployment logic goes here (e.g., pushing to a cloud provider)
                 echo 'Deploying application...'
             }
         }
